@@ -11,7 +11,7 @@ function BenefitsDAO(db) {
     }
 
     const usersCol = db.collection("users");
-
+    const testCodeChange = parseInt(2);
     this.getAllNonAdminUsers = callback => {
         usersCol.find({
             "isAdmin": {
